@@ -14,4 +14,5 @@ This script runs a function to prepare your local development project for deploy
 different server. The __prep()__ function just does a basic Symfony2 clear cache and dumping
 assetic assets. (if youre not using assetic, then just comment that line out).
 
-
+_Some sample output from Deploy1_:
+![sample output from Deploy1](deploy1-output.jpg)
