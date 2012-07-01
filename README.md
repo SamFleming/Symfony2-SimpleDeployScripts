@@ -19,7 +19,7 @@ _Should I be using_:
 Although project deployment is a critical & fundamental part of any Symfony2 project, there didn't
 seem to be any consensus as how best to go about this. As I couldn't find any _gentle_ introduction to the
 subject, I have put this together in the hopes that some of the existing Symfony2 gurus out there
-will point out where I'm making mistakes or missing things. 
+will point out where I'm making mistakes or missing things.
 
 _I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
 a missing step or two_ :-)
@@ -27,13 +27,13 @@ a missing step or two_ :-)
 __Tip__:
 If you're doing your development work in Windows and want to build Symfony2 based projects, do yourself
 a huge favour and install VirtualBox (or similar) and put your project on a Linux of your choice. It makes
-everything smoother (well, once you've learned how to build/maintain a LAMP server)
+everything smoother (well, once you've learned how to build/maintain a LAMP server...)
 
 
 ### Capifony
-I found Capifony to be interesting, but rather opaque (not a lot of docs and still not quite sure
-how to use it even after I got it all working). I don't know Ruby and the thought of having
-to dig through yet-another-language to be able to follow along didn't appeal greatly (and I found Ruby a
+I found Capifony to be interesting, but rather opaque (not a lot of docs and even after I got it all working,
+was still not quite sure how to use it). I also don't know Ruby and the thought of having
+to dig through yet-another-language to be able to follow along didn't appeal greatly (I found Ruby a
 royal pain to install properly).
 
 + http://capifony.org/
@@ -62,8 +62,8 @@ _Here are some articles that discuss ways to deploy via git_:
 I then looked at the handful of Symfony2 Bundles that have been built to handle deployments.
 I quickly discovered that they are all just wrappers around rsync and ssh. Inevitably getting
 a solid deploy concept working means having to tweak things for your specific needs -- having the
-various linux commands burried in a Symfony2 php bundle just made it tough for me to understand and
-modify to suit my needs.
+various linux commands burried in a Symfony2 php bundle just made it more difficult to understand and
+modify.
 
 + http://knpbundles.com/aerialls/MadalynnPlumBundle
 + http://knpbundles.com/dator/DeployBundle
@@ -72,21 +72,22 @@ modify to suit my needs.
 
 ## What next? Bash!
 
-So after all of this, I decided that the best way for me to get a grasp of
-what needs to be done for a solid, safe and (hopefully) simple deployment of Symfony2
-project(s), was to dive in and write my own Bash script. This turned out to be a great
-solution and has helped me understand quite a bit of what's going on behind-the-scenes.
+So after all of this, I decided that the best way to get a grasp of how to build a solid, safe and
+(hopefully) simple deployment of Symfony2 project(s), was to dive in and write my own Bash script.
+This turned out to be a great solution and has helped me understand quite a bit of what's going
+on behind-the-scenes.
 
 That said, I'm no Linux/Bash guru! Feel free to improve any of these scripts (send
 a pull request) or to point out where I've missed something important.
 
++ [Writing Shell Scripts](http://linuxcommand.org/wss0010.php)
++ [Bash Function Examples](http://www.thegeekstuff.com/2010/04/unix-bash-function-examples/)
 
 
-## My Deploy Goal
+## The Deploy Goal
 
-I just wanted to be able to call a simple script from the command line and have it handle
-all the things needed to sync to a server and sort out any specific Symfony2 requirements
-for updating at that end.
+Just call a simple script from the command line and have it handle all the things needed to sync to a
+server and sort out any specific Symfony2 requirements for updating at that end.
 
 This is what I was aiming for:
 
@@ -97,12 +98,12 @@ sit back for a few seconds, take a sip of coffee and voilà my Symfony2 project
 happily purring away on the destination server, with caches cleared, permissions updated, databases
 migrated and so on!
 
-__and my current working solution looks like this__:
+__my final working solution looks like this__:
 
     cd ~/path/to/project
     ./bin/deploy dev|stage|live
 
-Where the deploy live will only run if my local git repository is on the master branch.
+Where the deploy _live_ will only run if my local git repository is on the master branch.
 
 
 ## How to Use the Scripts
@@ -113,7 +114,7 @@ to it.
 
 __Prequisites__:
 + Your local Symfony2 project you will be deploying from is on Linux (Windows/Mac users should use something like VirtualBox)
-+ you have rsync installed on this
++ you have rsync installed on your servers (check in the console with **rsync --version**)
 
 
 #### Scripts
