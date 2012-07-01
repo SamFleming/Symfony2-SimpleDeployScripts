@@ -115,6 +115,6 @@ __Prequisites__:
 
 #### Simple
 
-+ [Deploy1](Symfony2-SimpleDeployScripts/tree/master/bin/simple)
++ [Deploy1](Symfony2-SimpleDeployScripts/tree/master/bin/simple/) <br />
     Super simple script to use as a starting point and to be sure your local
     development Symfony2 project is set up correctly.
