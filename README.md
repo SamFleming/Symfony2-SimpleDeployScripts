@@ -16,7 +16,9 @@ _Should I be using_:
 + ssh?
 
 Although project deployment seems to be a critical & fundamental part of any Symfony2 project, there didn't
-seem to be any consensus as how best to go about this.
+seem to be any consensus as how best to go about this. As I couldn't find any gentle introduction to the
+subject, I decided to put this together in the hopes that it will make this easier for others following in
+my footsteps.
 
 __Tip__:
 If you're doing your development work in Windows and want to build Symfony2 based projects, do yourself
@@ -28,6 +30,10 @@ everything smoother (well, once you've learned how to build a LAMP server!)
 I found Capifony to be interesting, but rather opaque (not a lot of docs and still not quite sure
 how to use it even after I got it all working). I don't know Ruby and the thought of having
 to dig through yet-another-language to be able to follow along didn't appeal greatly.
+
++ http://capifony.org/
++ https://github.com/everzet/capifony
+
 
 ### git
 At first I thought it would be slick to have git handle deploying directly to my servers with
