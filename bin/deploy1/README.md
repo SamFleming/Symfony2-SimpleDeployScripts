@@ -12,9 +12,9 @@ __Use__:
 
 This script runs a function to prepare your local development project for deployment to a
 different server. The __prep()__ function just does a basic Symfony2 clear cache and dumping
-assetic assets. (if youre not using assetic, then just comment that line out).
+of assetic assets in the 'prod' environment. (if youre not using assetic, then just comment that line out).
 
-_Some sample output from Deploy1_:
+_Sample output from Deploy1_:
 
-[![Deploy1 output](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/bin/simple/deploy1-output.jpg)](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/bin/simple/deploy1-output.jpg)
+[![Deploy1 output](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/bin/deploy1/deploy1-output.jpg)](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/bin/deploy1/deploy1-output.jpg)
 

@@ -27,14 +27,14 @@ a missing step or two_ :-)
 __Tip__:
 If you're doing your development work in Windows and want to build Symfony2 based projects, do yourself
 a huge favour and install VirtualBox (or similar) and put your project on a Linux of your choice. It makes
-everything smoother (well, once you've learned how to build a LAMP server!)
+everything smoother (well, once you've learned how to build/maintain a LAMP server)
 
 
 ### Capifony
 I found Capifony to be interesting, but rather opaque (not a lot of docs and still not quite sure
 how to use it even after I got it all working). I don't know Ruby and the thought of having
 to dig through yet-another-language to be able to follow along didn't appeal greatly (and I found Ruby a
-royal pain to install properly!).
+royal pain to install properly).
 
 + http://capifony.org/
 + https://github.com/everzet/capifony
@@ -77,8 +77,8 @@ what needs to be done for a solid, safe and (hopefully) simple deployment of Sym
 project(s), was to dive in and write my own Bash script. This turned out to be a great
 solution and has helped me understand quite a bit of what's going on behind-the-scenes.
 
-That said, I'm no Linux/Bash guru! Feel free to improve any of these scripts, and send
-a pull request :)
+That said, I'm no Linux/Bash guru! Feel free to improve any of these scripts (send
+a pull request) or to point out where I've missed something important.
 
 
 
@@ -97,7 +97,7 @@ sit back for a few seconds, take a sip of coffee and voilà my Symfony2 project
 happily purring away on the destination server, with caches cleared, permissions updated, databases
 migrated and so on!
 
-__and my current solution looks like this__:
+__and my current working solution looks like this__:
 
     cd ~/path/to/project
     ./bin/deploy dev|stage|live
@@ -116,8 +116,8 @@ __Prequisites__:
 + you have rsync installed on this
 
 
-#### Simple
+#### Scripts
 
 + [Deploy1](Symfony2-SimpleDeployScripts/tree/master/bin/simple/) <br />
-    Super simple script to use as a starting point and to be sure your local
+    Super simple script to use as a starting point and to check that your local
     development Symfony2 project is set up correctly.
