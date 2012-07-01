@@ -16,10 +16,10 @@ _Should I be using_:
 + rsync?
 + ssh?
 
-Although project deployment seems to be a critical & fundamental part of any Symfony2 project, there didn't
-seem to be any consensus as how best to go about this. As I couldn't find any gentle introduction to the
-subject, I decided to put this together in the hopes that it will make this easier for others following in
-my footsteps.
+Although project deployment is a critical & fundamental part of any Symfony2 project, there didn't
+seem to be any consensus as how best to go about this. As I couldn't find any _gentle_ introduction to the
+subject, I have put this together in the hopes that some of the existing Symfony2 gurus out there
+will point out where I'm making mistakes or missing things. 
 
 _I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
 a missing step or two_ :-)
