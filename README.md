@@ -60,7 +60,7 @@ _Here are some articles that discuss ways to deploy via git_:
 
 ### Deploy Bundle(s)
 I then looked at the handful of Symfony2 Bundles that have been built to handle deployments.
-I quickly discovered that they are all just wrappers around rsync and ssh. Inevitably getting
+I quickly discovered that most are just wrappers around rsync and ssh. Inevitably getting
 a solid deploy concept working means having to tweak things for your specific needs -- having the
 various linux commands burried in a Symfony2 php bundle just made it more difficult to understand and
 modify.
@@ -77,8 +77,8 @@ So after all of this, I decided that the best way to get a grasp of how to build
 This turned out to be a great solution and has helped me understand quite a bit of what's going
 on behind-the-scenes.
 
-That said, I'm no Linux/Bash guru! Feel free to improve any of these scripts (send
-a pull request) or to point out where I've missed something important.
+That said, I'm no Linux/Bash guru!  
+Feel free to improve any of these scripts (send a pull request) or to point out where I've missed something important.
 
 + [Writing Shell Scripts](http://linuxcommand.org/wss0010.php)
 + [Bash Function Examples](http://www.thegeekstuff.com/2010/04/unix-bash-function-examples/)
@@ -121,6 +121,6 @@ use something like VirtualBox)
 
 #### Scripts
 
-+ [Deploy1](Symfony2-SimpleDeployScripts/tree/master/bin/simple/) <br />
++ [Deploy1](Symfony2-SimpleDeployScripts/tree/master/bin/deploy1/) <br />
     Super simple script to use as a starting point and to check that your local
     development Symfony2 project is set up correctly.
