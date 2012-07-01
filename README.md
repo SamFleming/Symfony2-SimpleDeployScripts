@@ -21,7 +21,7 @@ seem to be any consensus as how best to go about this. As I couldn't find any _g
 subject, I have put this together in the hopes that some of the existing Symfony2 gurus out there
 will point out where I'm making mistakes or missing things.
 
-_I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
+**Disclaimer**: _I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
 a missing step or two_ :-)
 
 __Tip__:
@@ -94,7 +94,7 @@ This is what I was aiming for:
     cd ~/path/to/project
     ./bin/deploy
 
-sit back for a few seconds, take a sip of coffee and voilà my Symfony2 project
+then sit back for a few seconds, take a sip of coffee and voilà!, a Symfony2 project
 happily purring away on the destination server, with caches cleared, permissions updated, databases
 migrated and so on!
 
@@ -103,17 +103,19 @@ __my final working solution looks like this__:
     cd ~/path/to/project
     ./bin/deploy dev|stage|live
 
-Where the deploy _live_ will only run if my local git repository is on the master branch.
+Where the deploy _live_ option will only run if my local git repository is on the master branch, to keep
+from mistakenly deploying a development or feature branch to the live production server.
 
 
 ## How to Use the Scripts
 
-The idea is to provide a super simple bash script to start from. This should do the absolute
-minimum to let you see that it's working properly, before adding more layers of functionality/complexity
-to it.
+The scripts are meant as starting points for your own deploys. Each does the absolute
+minimum required to let you see that it's working properly, before adding more layers of
+functionality/complexity.
 
 __Prequisites__:
-+ Your local Symfony2 project you will be deploying from is on Linux (Windows/Mac users should use something like VirtualBox)
++ Your local Symfony2 project you will be deploying from is on Linux (Windows/Mac users should
+use something like VirtualBox)
 + you have rsync installed on your servers (check in the console with **rsync --version**)
 
 
