@@ -1,5 +1,8 @@
 # Symfony2 Simple Deploy Scripts
 
+[![Deploy1 output](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/img/deploy-concept.jpg)](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/raw/master/bin/img/deploy-concept.jpg)
+
+
 ## Background
 
 Getting started with Symfony2 can be a daunting task for those of us new to it and one of the areas that
