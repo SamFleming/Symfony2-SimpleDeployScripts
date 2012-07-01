@@ -1,18 +1,21 @@
 # Deploy1
 
-## The First Step
+## Getting Started
 
-By keeping this first script super simple, it should help if you have any issues with other
+A first super simple script -- it should help if you have any issues with other
 things not working correctly.
+
+All it's doing is setting up your local 'prod' environment.
 
 __Use__:
 
     cd /path/to/your/project/bin/simple
     ./deploy1
 
-This script runs a function to prepare your local development project for deployment to a
+This script runs a function to prepare your local project for deployment to a
 different server. The __prep()__ function just does a basic Symfony2 clear cache and dumping
 of assetic assets in the 'prod' environment. (if youre not using assetic, then just comment that line out).
+
 
 _Sample output from Deploy1_:
 

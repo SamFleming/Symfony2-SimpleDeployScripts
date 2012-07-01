@@ -5,6 +5,10 @@
 
 ## Background
 
+
+**Disclaimer**: _I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
+a missing step or two_ :-)
+
 Getting started with Symfony2 can be a daunting task for those of us new to it and one of the areas that
 I found the most confusing, was how to properly deploy a project to various servers.
 
@@ -21,8 +25,6 @@ seem to be any consensus as how best to go about this. As I couldn't find any _g
 subject, I have put this together in the hopes that some of the existing Symfony2 gurus out there
 will point out where I'm making mistakes or missing things.
 
-**Disclaimer**: _I'm still learning both Symfony2 and how best to deploy, so please let me know if you find a mistake or
-a missing step or two_ :-)
 
 __Tip__:
 If you're doing your development work in Windows and want to build Symfony2 based projects, do yourself
@@ -33,7 +35,7 @@ everything smoother (well, once you've learned how to build/maintain a LAMP serv
 ### Capifony
 I found Capifony to be interesting, but rather opaque (not a lot of docs and even after I got it all working,
 was still not quite sure how to use it). I also don't know Ruby and the thought of having
-to dig through yet-another-language to be able to follow along didn't appeal greatly (I found Ruby a
+to dig through yet-another-language to be able to follow along didn't appeal greatly (plus I found Ruby a
 royal pain to install properly).
 
 + http://capifony.org/
@@ -77,7 +79,7 @@ So after all of this, I decided that the best way to get a grasp of how to build
 This turned out to be a great solution and has helped me understand quite a bit of what's going
 on behind-the-scenes.
 
-That said, I'm no Linux/Bash guru!  
+That said, I'm no Linux/Bash guru!
 Feel free to improve any of these scripts (send a pull request) or to point out where I've missed something important.
 
 + [Writing Shell Scripts](http://linuxcommand.org/wss0010.php)
@@ -86,7 +88,7 @@ Feel free to improve any of these scripts (send a pull request) or to point out 
 
 ## The Deploy Goal
 
-Just call a simple script from the command line and have it handle all the things needed to sync to a
+To just call a simple script from the command line and have it handle all the things needed to sync to a
 server and sort out any specific Symfony2 requirements for updating at that end.
 
 This is what I was aiming for:
@@ -101,7 +103,7 @@ migrated and so on!
 __my final working solution looks like this__:
 
     cd ~/path/to/project
-    ./bin/deploy dev|stage|live
+    ./bin/deploy dev|stage|fix|live
 
 Where the deploy _live_ option will only run if my local git repository is on the master branch, to keep
 from mistakenly deploying a development or feature branch to the live production server.
