@@ -16,4 +16,5 @@ assetic assets. (if youre not using assetic, then just comment that line out).
 
 _Some sample output from Deploy1_:
 
-[![Deploy1 output](Symfony2-SimpleDeployScripts/blob/master/bin/simple/deploy1-output.jpg)](Symfony2-SimpleDeployScripts/blob/master/bin/simple/deploy1-output.jpg)
+[![Deploy1 output](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/blob/master/bin/simple/deploy1-output.jpg)](https://github.com/ZermattChris/Symfony2-SimpleDeployScripts/blob/master/bin/simple/deploy1-output.jpg)
+
