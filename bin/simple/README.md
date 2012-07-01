@@ -16,4 +16,4 @@ assetic assets. (if youre not using assetic, then just comment that line out).
 
 _Some sample output from Deploy1_:
 
-[![Deploy1 output](deploy1-output.jpg)](deploy1-output.jpg)
+[![Deploy1 output](simple/deploy1-output.jpg)](simple/deploy1-output.jpg)
